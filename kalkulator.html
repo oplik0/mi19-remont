@@ -8,6 +8,7 @@
         <meta name="keywords" content="remont" />
         <title>Wyremontuj mieszkanie</title>
         <link rel="stylesheet" href="remont.css" />
+        <script src="scripts/main.js"></script>
     </head>
     <body>
         <header class="banner">
@@ -21,7 +22,16 @@
                 >POLECANE STRONY</a
             >
         </nav>
-        <main></main>
+        <main>
+            <h1>Malowanie pokoju: 8 zł za m<sup>2</sup></h1>
+            <p>
+                Wymiary pokoju w metrach
+                <input type="number" name="x" id="x" />
+                <input type="number" name="y" id="y" />
+            </p>
+            <button id="calculate">OBLICZ KOSZT</button>
+            <p id="result"></p>
+        </main>
         <footer>
             <p>Autor strony: 02231121471</p>
         </footer>
