@@ -7,17 +7,20 @@ function runScript() {
     const calcButton = document.getElementById("calculate");
     const result = document.getElementById("result");
     const mailButton = document.getElementById("mailto");
-    calcButton.addEventListener("click", () => {
-        const x = Number(xInput.value);
-        const y = Number(yInput.value);
-        const area = 2 * height * x + 2 * height * y;
-        const cost = area * price;
-        result.innerHTML = `Powierzchnia całkowita ścian: ${area} m<sup>2</sup><br>
-                            Koszt malowania: ${cost}zł`;
-    });
-    mailButton.addEventListener("click", () => {
-        window.location.href = "mailto:remont@wp.pl";
-    });
+    if (calcButton) {
+        calcButton.addEventListener("click", () => {
+            const x = Number(xInput.value);
+            const y = Number(yInput.value);
+            const area = 2 * height * x + 2 * height * y;
+            const cost = area * price;
+            result.innerHTML = `Powierzchnia całkowita ścian: ${area} m<sup>2</sup><br>
+                                Koszt malowania: ${cost}zł`;
+        });
+    } else if (mailButton) {
+        mailButton.addEventListener("click", () => {
+            window.location.href = "mailto:remont@wp.pl";
+        });
+    }
 }
 
 if (
