@@ -11,8 +11,8 @@ function runScript() {
         const y = Number(yInput.value);
         const area = 2 * height * x + 2 * height * y;
         const cost = area * price;
-        result.innerHTML = `Powierzchnia całkowita ścian: ${area} m<sup>2</sup><br>
-                            Koszt malowania: ${cost}zł`;
+        result.innerHTML = `Powierzchnia całkowita ścian: ${area} m<sup>2</sup><br><br>
+                            Koszt malowania: ${cost} zł`;
     });
 }
 
