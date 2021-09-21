@@ -25,8 +25,7 @@ a:visited {
     color: white;
 }
 
-button,
-input[type="button"] {
+button {
     background-color: brown;
     border: 2px brown;
     color: white;
